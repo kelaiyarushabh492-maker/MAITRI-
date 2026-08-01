@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Friendship Day, Batkiii!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="cosmic-canvas"></canvas>
+
+    <div class="music-player">
+        <button id="music-toggle" aria-label="Toggle Music">🎵</button>
+        <audio id="bg-music" loop>
+            <source src="assets/friendship-song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- 1. Cinematic Intro Screen -->
+    <section id="intro-screen" class="screen active">
+        <div class="glass-card intro-card">
+            <h1 id="typewriter" class="apple-text"></h1>
+            <button id="enter-btn" class="apple-btn disabled">Step Inside 🌌</button>
+        </div>
+    </section>
+
+    <!-- 2. Main Portal / Envelope Screen -->
+    <section id="portal-screen" class="screen">
+        <div class="aurora-glow"></div>
+        <div class="envelope-container">
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter" id="open-letter-btn">
+                    <p>Tap to Open, Maitri ✨</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Core Experience Dashboard -->
+    <section id="main-content" class="screen">
+        <div class="dashboard-container">
+            
+            <div class="glass-card letter-card">
+                <h2 class="section-title">To My Best Friend 🤍</h2>
+                <div class="scrollable-letter">
+                    <p>Dear Batkiii,</p>
+                    <p>Happy Friendship Day! Having you in my life is like finding a rare star in a massive galaxy. No matter how much we tease each other, you'll always be my absolute favorite human.</p>
+                    <p>Thank you for laughing at my terrible jokes, listening to my endless rants, and always having my back. Distance, time, or busyness can't change the bond we share.</p>
+                    <p>You are irreplaceable, Maitri. Here is to a lifetime of more chaotic adventures, late-night talks, and endless memories!</p>
+                    <p class="signature">With love always,<br>— Rushabh</p>
+                </div>
+            </div>
+
+            <div class="glass-card gallery-card">
+                <h2 class="section-title">Our Core Memories</h2>
+                <div class="gallery-grid">
+                    <div class="photo-thumb" data-index="0"><img src="assets/photo1.jpg" alt="Memory 1"></div>
+                    <div class="photo-thumb" data-index="1"><img src="assets/photo2.jpg" alt="Memory 2"></div>
+                    <div class="photo-thumb" data-index="2"><img src="assets/photo3.jpg" alt="Memory 3"></div>
+                    <div class="photo-thumb" data-index="3"><img src="assets/photo4.jpg" alt="Memory 4"></div>
+                    <div class="photo-thumb" data-index="4"><img src="assets/photo5.jpg" alt="Memory 5"></div>
+                    <div class="photo-thumb" data-index="5"><img src="assets/photo6.jpg" alt="Memory 6"></div>
+                    <div class="photo-thumb" data-index="6"><img src="assets/photo7.jpg" alt="Memory 7"></div>
+                    <div class="photo-thumb" data-index="7"><img src="assets/photo8.jpg" alt="Memory 8"></div>
+                    <div class="photo-thumb" data-index="8"><img src="assets/photo9.jpg" alt="Memory 9"></div>
+                    <div class="photo-thumb" data-index="9"><img src="assets/photo10.jpg" alt="Memory 10"></div>
+                </div>
+            </div>
+
+            <footer class="dashboard-footer">
+                <button id="finale-btn" class="apple-btn pulse-glow">Trigger Finale 🎆</button>
+                <p class="easter-egg-text">P.S. Try typing her secret nickname on your keyboard...</p>
+            </footer>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="nav-btn prev-btn">‹</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Active Memory">
+        </div>
+        <button class="nav-btn next-btn">›</button>
+    </div>
+
+    <div id="easter-egg-modal" class="modal">
+        <div class="glass-card modal-card">
+            <h2>✨ Achievement Unlocked: Badiiii! ✨</h2>
+            <p>You found the secret code! You truly are Rushabh's number one partner in crime. Cheers to our unbreakable bond! 🥂</p>
+            <button id="close-modal" class="apple-btn">Back to Reality</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
